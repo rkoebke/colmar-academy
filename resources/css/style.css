@@ -1,0 +1,216 @@
+/* Universal Styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  margin: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  height: 64px;
+  align-items: center;
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 24px;
+}
+
+header span {
+  font-size: 2rem;
+}
+
+header #desktop {
+  margin-right: 24px;
+}
+
+header a {
+  margin-left: 16px;
+}
+
+header #mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  header .desktop-logo {
+    display: none;
+  }
+
+  header #desktop {
+    display: none;
+  }
+
+  header #mobile {
+    display: block;
+  }
+}
+
+/* First Section */
+#learn {
+  background-color: #DCDCDC;
+  display: flex;
+  align-items: center;
+}
+
+.lg-container {
+  width: 60%;
+  padding: 32px 24px;
+  height: auto;
+}
+
+.feature-img {
+  width: 100%;
+}
+
+.sm-container {
+  display: flex;
+  flex-flow: wrap column;
+  width: 40%;
+  height: auto;
+}
+
+/* Second Section */
+#info {
+  display: flex;
+}
+
+#info .lg-container {
+  border-right: 1px solid black;
+}
+
+#info .sm-container {
+  margin-top: 16px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info.date {
+  border-bottom: 2px double #DCDCDC;
+}
+
+.info.guest {
+  background-color: #DCDCDC;
+}
+
+.img-container {
+  padding: 16px 0 16px 16px;
+  width: 35%;
+}
+
+.img-container img {
+  height: auto;
+  width: 100%;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  padding-right: 24px;
+  width: 65%;
+}
+
+.text-info span{
+  padding: 8px 0 8px 0;
+}
+
+/* Third Section */
+#learning {
+  background-color: #DCDCDC;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+  align-items: center;
+}
+
+#learning h1 {
+  padding-top: 32px;
+  margin: 0;
+}
+
+.cards-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 32px 40px;
+  max-width: 80%;
+}
+
+.card-container {
+  background-color: white;
+  height: auto;
+  margin: 16px 16px;
+  width: 30%
+}
+
+.card-container img {
+  width: 100%;
+}
+
+.text-learning {
+  margin: 16px;
+}
+
+/* Fourth Section */
+#thesis {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+#thesis h1 {
+  text-align: center;
+  margin: 32px 0 0 0;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container .lg-container {
+  width: 60%;
+}
+
+.flex-container .sm-container {
+  padding-top: 32px;
+}
+
+.flex-container .lg-container .video-feat {
+  width: 100%;
+}
+
+.info.fisma {
+  background-color: #DCDCDC;
+}
+
+/* Footer */
+footer {
+  margin-bottom: 32px;
+}
+
+footer .flex-container {
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+footer p {
+  margin: 0;
+}
