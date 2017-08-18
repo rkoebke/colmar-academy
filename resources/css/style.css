@@ -46,7 +46,7 @@ header #mobile {
 }
 
 @media only screen and (max-width: 480px) {
-  header .desktop-logo {
+  header .logo-container {
     display: none;
   }
 
@@ -55,7 +55,11 @@ header #mobile {
   }
 
   header #mobile {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    width: 100%;
   }
 }
 
@@ -66,10 +70,23 @@ header #mobile {
   align-items: center;
 }
 
+@media only screen and (max-width: 480px) {
+  #learn {
+    display: block;
+  }
+}
+
 .lg-container {
   width: 60%;
   padding: 32px 24px;
   height: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .lg-container {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .feature-img {
@@ -83,9 +100,38 @@ header #mobile {
   height: auto;
 }
 
-/* Second Section */
+@media only screen and (max-width: 480px) {
+  .sm-container {
+    align-items: center;
+    width: 100%;
+  }
+  .tagline {
+    margin: 32px 16px;
+  }
+
+  .tagline h1 {
+    margin: 0;
+    font-size: 2.15rem;
+    font-weight: 700;
+  }
+
+  .tagline h3 {
+    padding: 32px 0 24px 0;
+  }
+
+  .tagline .button {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* Second Section - Desktop */
 #info {
   display: flex;
+}
+
+#info-mobile {
+  display: none;
 }
 
 #info .lg-container {
@@ -129,6 +175,49 @@ header #mobile {
 
 .text-info span{
   padding: 8px 0 8px 0;
+}
+
+/* Second Section - Mobile */
+@media only screen and (max-width: 480px) {
+  #info {
+    display: none;
+  }
+
+  #info-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #info-mobile .sm-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  #info-mobile .info-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  #info-mobile .info {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #info-mobile .img-container {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+
+  #info-mobile .text-info {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #info-mobile .text-info span {
+    padding: 0;
+  }
 }
 
 /* Third Section */
